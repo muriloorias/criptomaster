@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fale com a equipe de suporte da CriptoMaster. Envie sua dúvida e responderemos em até 5 dias úteis.">
+    <title>Suporte - CriptoMaster</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+        <header class="header">
+        <div class="header-container">
+            <a class="brand-link" href="home.html">
+                <img class="logo" src="../imgs/logo.jpg" alt="Logo CriptoMaster">
+                <span class="brand-name">CriptoMaster</span>
+            </a>
+            <nav class="nav">
+                <a href="home.html">Início</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                <a href="home.html#vantagens">Vantagens</a>
+            </nav>
+            <a href="comecar.html" class="btn-header">Acessar</a>
+        </div>
+    </header>
+    
+   <main class="container">
+    <section class="page-hero">
+        <nav class="breadcrumb" aria-label="Caminho"><a href="comecar.html">Começar</a> / Suporte</nav>
+        <h2>Com dúvida ou problema? Contate-nos!</h2>
+        <p class="lead">Nossa equipe está sempre pronta para atuar.</p>
+    </section>
+
+    <div class="aviso-sucesso" id="avisoSucesso" role="status" aria-live="polite" hidden>
+        <strong>Formulário enviado!</strong>
+        Recebemos sua mensagem e responderemos em até 5 dias úteis.
+    </div>
+
+    <section class="content-block">
+        <h3>Conte-nos: O que aconteceu?</h3>
+        <p>Insira sua dúvida e algumas informações para que nós possamos te ajudar.</p>
+    </section>
+
+    <form id="suporte">
+        <section class="content-block">
+            <h3>Primeiro: identifique-se</h3>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+        </section>
+
+        <section class="content-block">
+            <h3>Sua dúvida:</h3>
+            <p>Tente ser o mais claro e direto possível para conseguirmos te ajudar.</p>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+        </section>
+
+        <section class="cta-block">
+            <h3>Pronto?</h3>
+            <p>Nossa equipe te dará uma resposta em no máximo 5 dias úteis.</p>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </section>
+    </form>
+</main>
+<script src="../js/script.js"></script>
+</body>
+</html>
