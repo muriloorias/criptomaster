@@ -613,3 +613,108 @@ a:focus-visible,
         justify-content: center;
     }
 }
+
+.product-hover {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.product-hover .product {
+    display: block;
+    border: none;
+    box-shadow: none;
+}
+.product-hover video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-hover.ativo video {
+    opacity: 1;
+}
+
+.content-block label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-white);
+}
+
+.content-block input,
+.content-block textarea {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.content-block textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.content-block input::placeholder,
+.content-block textarea::placeholder {
+    color: #6b7385;
+}
+
+.content-block input:hover,
+.content-block textarea:hover {
+    border-color: var(--purple-primary);
+}
+
+.content-block input:focus,
+.content-block textarea:focus {
+    outline: none;
+    border-color: var(--blue-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+
+.content-block div + div,
+.content-block p + div {
+    margin-top: 16px;
+}
+
+
+button.btn {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+#suporte {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.aviso-sucesso {
+    background: rgba(52, 211, 153, 0.1);
+    border: 1px solid #34d399;
+    border-radius: 8px;
+    padding: 18px 22px;
+    color: var(--text-muted);
+}
+
+.aviso-sucesso strong {
+    display: block;
+    color: var(--text-white);
+    margin-bottom: 2px;
+}
